@@ -1,0 +1,46 @@
+.admin_card_container{
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    flex-direction: column;
+}
+.top >img{
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.read_more{
+    background-color: #093c66;
+    height: 30px;
+    font-size: small;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+.admin_card_container{
+    gap: 5px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 350px;
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.admi_title{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 150px;
+    height: 40px;
+    text-overflow: ellipsis;
+
+}

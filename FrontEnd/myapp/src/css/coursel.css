@@ -1,0 +1,18 @@
+.coursel_main_container{
+    width: 1080px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    object-fit: contain;
+    margin-top: 0px;
+    background-color: black;
+    z-index: 5;
+}
+.coursel_main_container > .slideimg{
+   object-fit: contain;
+    width: 1080px;
+    height: 400px;
+    position: absolute;
+    transition: 1s;
+    z-index: 5;
+}

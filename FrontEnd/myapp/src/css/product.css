@@ -1,0 +1,15 @@
+.product_main_container{
+    width: 75%;
+    /* width: 1080px; */
+    min-height: calc(100vh - 60px);
+    place-items: center;
+    margin-bottom: 20px;
+    /* display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1rem; */
+    display: grid;
+  
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    /* grid-template-rows: repeat(auto-fill,300px); */
+    margin-inline: auto;
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Source+Code+Pro&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.main_contaiber_login_reg{
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reg_and_login_container{
+    width: 1080px;
+    height: 70vh;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.left_container{
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    background-color: #011627;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    color: white;
+}
+.login_container{
+    
+    display: none;
+    gap: 20px;
+    flex-direction: column;
+}
+.email_input,.password_input{
+    font-family: 'Josefin Sans', sans-serif;
+    height: 40px;
+    width: 300px;
+    border: solid gray 1px;
+    outline: none;
+    border-radius: 8px;
+    text-indent: 10px;
+}
+.login_btn{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 40px;
+    border-radius: 8px;
+    border: solid gray 1px;
+    background-color: #011627;
+}
+.email_input:focus,.password_input:focus{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.already_user{
+    font-size: small;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.register{
+    color: blue;
+}
+.register_container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+@media (321px <= width <=667px){
+    .reg_and_login_container{
+        height: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .left_container{
+        height: 150px;
+        width: 150px;
+    }
+    .logo{
+        height: 70px;
+        width: 70px;
+    }
+}
+@media (0px <= width <=320px){
+    .reg_and_login_container{
+        height: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .left_container{
+        height: 120px;
+        width: 120px;
+    }
+    .logo{
+        height: 40px;
+        width: 40px;
+    }
+    .register_container{
+        gap: 15px;
+    }
+}

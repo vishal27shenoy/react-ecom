@@ -1,0 +1,57 @@
+.contact_main_container{
+    width: 1080px;
+    margin-inline: auto;
+}
+.contact_board_container{
+    height: 200px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("https://www.cloud4c.com/sites/default/files/2022-07/cloud4c-company-contact-1Desktop.jpg");
+}
+.contact_form_container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 350px;
+}
+.contact_input_name,.contact_input_email{
+    width: 400px;
+    height: 40px;
+    border: solid gray 1px;
+    border-radius: 8px;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+    text-indent: 20px;
+
+}
+.contact_input_text{
+    height: 200px;
+    width: 400px;
+    resize: none;
+    border-radius: 8px;
+    outline: none;
+    border: solid gray 1px;
+    text-indent: 20px;
+    padding-top: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.contact_button{
+    height: 40px;
+    width: 400px;
+    background-color: #011627;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 8px;
+    outline: none;
+}
+.contact_input_name:focus,.contact_input_email:focus,.contact_input_text:focus{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

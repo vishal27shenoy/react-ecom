@@ -1,0 +1,35 @@
+.product_info_container{
+    min-height: calc(90vh - 60px);
+    width: 1080px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.product_info_right_container{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.product_info_buy > button{
+    height: 40px;
+    width: 300px;
+    background-color: #011627;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 8px;
+}
+.product_info_buy{
+    margin-inline: auto;
+}
+.product_info_left_container>img{
+    height: 300px;
+}
+.product_info_rating{
+    display: flex;
+}

@@ -1,0 +1,188 @@
+.adminhome_container{   
+    display: flex;
+}
+.sidebar_container{
+    width: 300px;
+    background-color: #011627;
+    height: 95vh;
+}
+.admin_navbar{
+    height: 60px;
+    width: 100%;
+    background-color: #011627;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    align-items: center;
+}
+.sidebar_container{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 20px;
+    gap: 30px;
+}
+.sidebar_container > div{
+    height: 50px;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar_container > div:hover{
+    background-color: #093c66;
+}
+.admin_navbar_left_container{
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-left: 3rem;
+    color: white;
+    font-size: 1.5rem;
+}
+.display_element_grid{
+    margin-inline: auto !important;
+    width: 100%;
+    padding-inline: 20px;
+    display: grid;
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    column-gap: 50px;
+    grid-template-columns: repeat(5,1fr);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.admin_card{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    font-size: 10px;
+
+}
+.admin_card:hover{
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.admin_card>button{
+    background-color: white;
+    height: 30px;
+    border-bottom-left-radius: 8px;
+    outline: none;
+    border: none;
+    border-bottom-right-radius: 8px;
+    margin-top: -10px;
+}
+.admin_add_product{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    place-content: center;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #011627;
+    font-size: larger;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 600;
+    right: 20px;
+    bottom: -10px;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+}
+.form_container_admin_add_product{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.form_container_admin_add_product>input{
+    height: 40px;
+    width: 1005;
+    border-radius: 8px;
+    text-indent: 20px;
+    outline: none;
+    border: solid gray 1px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* .admin_card_container{
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 300px;
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+.update_and_delete_btn{
+    display: flex;
+    gap: 30px;
+}
+.admin_delete_btn{
+    background-color: rgb(236, 53, 53);
+    color: white;
+    height: 30px;
+    width: 50px;
+    border: none;
+    font-size: small;
+    border-radius: 8px;
+}
+.admin_update_btn{
+    background-color: rgb(67, 77, 213);
+    color: white;
+    height: 30px;
+    width: 50px;
+    border: none;
+    font-size: small;
+    border-radius: 8px;
+}
+.display_order_in_grid{
+    overflow: scroll;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+    margin-inline: 20px;
+}
+.order_card{
+    padding-inline: 20px;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.product_img > img{
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
+.order_title{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 250px;
+
+}
+.product_order_info{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
